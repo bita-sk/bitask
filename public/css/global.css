@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Raleway-Regular;
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../images/background.png");
+    font-family: "Raleway-Regular";
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+header {
+    float: left;
+    width: 99.9%;
+    height: 100px;
+    background: white;
+    border: 1px solid #B3B3B3;
+}
+
+header > .left-side > .name {
+    margin-top: 27px;
+    margin-left: 27px;
+    font-size: 35px;
+    color: #4D4D4D;
+    float: left;
+}
+
+header > .left-side > .link-icons img {
+    height: 50px;
+}
+
+header > .left-side > .link-icons li {
+    float: left;
+    display: inline-block;
+    margin-left: 27px;
+    margin-top: 25px;
+}
+
+.menu {
+    float: right;
+    margin-top: 45px;
+    margin-right: 27px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 316px;
+    height: 40px;
+    margin-left: -158px;
+    left: 50%;
+    background: white;
+    text-align: center;
+}
+
+footer > span {
+    float: left;
+    margin-top: 13px;
+    width: 100%;
+}

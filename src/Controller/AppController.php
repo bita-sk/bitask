@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 
-use Symfony\Component\HttpFoundation\Response;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\Routing\Annotation\Route;
 
 class AppController
@@ -11,11 +11,14 @@ class AppController
 
     /**
      * @Route("/")
-     * @return Response
+     * @Template("bitask/homepage.html.twig")
+     * @return array
      */
     public function homepage()
     {
-        return new Response('Bitask');
+        return [
+            "title" => ""
+        ];
     }
 
 }

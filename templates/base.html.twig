@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Radek Bittner - homepage{% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/global.css') }}" type="text/css"/>
+    {% endblock %}
+</head>
+<body>
+
+<header>
+<div class="left-side">
+    <span class="name">Radek Bittner</span>
+    <ul class="link-icons">
+        <li><a target="_blank" href="https://packagist.org/packages/bita-sk/"><img src="{{ asset('images/packagist.png') }}" title="Packagist"> </a> </li>
+        <li><a target="_blank" href="https://github.com/bita-sk"><img src="{{ asset('images/github.png') }}" title="Github"> </a> </li>
+        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100005109948464"><img src="{{ asset('images/facebook.png') }}" title="Packagist"> </a> </li>
+    </ul>
+</div>
+
+    <ul class="menu">
+        <li><a href="">O mě</a> </li>
+        <li>|</li>
+        <li><a href="">Reference</a> </li>
+        <li>|</li>
+        <li><a href="">Fotografie</a> </li>
+        <li>|</li>
+        <li><a href="">Cíle</a> </li>
+        <li>|</li>
+        <li><a href="">Životopis</a> </li>
+        <li>|</li>
+        <li><a href="">Kontakt & dotaz</a> </li>
+        <li>|</li>
+        <li><a href="">Blog</a> </li>
+    </ul>
+
+</header>
+
+{% block body %}
+
+{% endblock %}
+
+<footer>
+    <span>Radek Bittner &copy; 2018</span>
+</footer>
+
+{% block javascripts %}{% endblock %}
+</body>
 </html>
